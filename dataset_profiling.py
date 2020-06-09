@@ -1,8 +1,6 @@
-#!/usr/bin/env python
-# coding: utf-8
 
-# In[ ]:
-
+# Required libraries: Pandas, Numpy
+# raw_data is must be a pandas dataframe.
 
 def dataset_profiler(raw_data):
     df_prof=pd.DataFrame(columns=["column name","count","number of unique","number of null value","is binary?","number of 1","data type","fill rate"],index=np.arange(0,len(raw_data.columns)))
